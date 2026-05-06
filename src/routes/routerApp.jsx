@@ -5,6 +5,8 @@ import Dashboard from "../pages/Dashboard";
 import Board from "../pages/Board";
 import Candidates from "../pages/Candidates";
 import Offers from "../pages/Offers";
+import CreateOffer from "../pages/CreateOffer";
+import EditOffer from "../pages/EditOffer";
 export let routerApp = [
   {
     path: "/",
@@ -33,6 +35,14 @@ export let routerApp = [
       {
         path: "offers/",
         element: <Offers />,
+      },
+      {
+        path: "create-offer/",
+        element: <CreateOffer />,
+      },
+      {
+        path: "edit-offer:id/",
+        element: <EditOffer />,
       },
     ],
   },

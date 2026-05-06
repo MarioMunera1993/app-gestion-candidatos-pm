@@ -1,5 +1,5 @@
 import Sidebar from "../components/Sidebar";
-import { Outlet } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 const Dashboard = () => {
   return (
     <div className="min-h-screen bg-white text-slate-900">
@@ -23,12 +23,13 @@ const Dashboard = () => {
                 >
                   Registrar usuario
                 </button>
-                <button
+                <Link
+                  to="create-offer/"
                   type="button"
                   className="rounded-lg bg-blue-700 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-800"
                 >
                   Crear oferta
-                </button>
+                </Link>
               </div>
             </header>
             <Outlet />
