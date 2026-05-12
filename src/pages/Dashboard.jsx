@@ -17,12 +17,12 @@ const Dashboard = () => {
                 </p>
               </div>
               <div className="flex flex-wrap gap-2">
-                <button
-                  type="button"
+                <Link
+                  to="/register"
                   className="rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-blue-800 hover:bg-slate-50"
                 >
                   Registrar usuario
-                </button>
+                </Link>
                 <Link
                   to="create-offer/"
                   type="button"

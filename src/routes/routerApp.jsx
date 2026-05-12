@@ -41,7 +41,7 @@ export let routerApp = [
         element: <CreateOffer />,
       },
       {
-        path: "edit-offer:id/",
+        path: "edit-offer/:id/",
         element: <EditOffer />,
       },
     ],

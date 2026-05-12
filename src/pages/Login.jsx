@@ -2,6 +2,7 @@ import { useState, useEffect } from "react"
 import { end_points } from "../services/api"
 import { redirectAlert } from "../helpers/alerts"
 import { saveLocalStorage } from "../helpers/local-storage"
+import { Link } from "react-router-dom"
 
 const Login = () => {
   const [user, setUser] = useState("")
@@ -77,8 +78,7 @@ const Login = () => {
               />
               <span class="text-slate-500">Remember me </span>
             </div>
-            <a class="text-blue-500 font-medium hover:underline" href="#"
-            >Forgot Password</a>
+            <span className="text-slate-400">Forgot Password</span>
           </div>
           <button
             class="w-full justify-center py-1 bg-blue-500 hover:bg-blue-600 active:bg-blue-700 rounded-md text-white ring-2"
@@ -91,7 +91,9 @@ const Login = () => {
           </button>
           <p class="flex justify-center space-x-1">
             <span class="text-slate-700"> Have an account? </span>
-            <a class="text-blue-500 hover:underline" href="#">Sign Up</a>
+            <Link to="/register" className="text-blue-500 hover:underline">
+              Sign Up
+            </Link>
           </p>
         </form>
       </div>

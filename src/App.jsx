@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const App = () => {
   return (
     <div className="min-h-screen bg-white text-slate-900">
@@ -15,18 +17,18 @@ const App = () => {
             </div>
 
             <div className="flex items-center gap-2">
-              <button
-                type="button"
+              <Link
+                to="/login"
                 className="rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-blue-800 hover:bg-slate-50"
               >
                 Login
-              </button>
-              <button
-                type="button"
+              </Link>
+              <Link
+                to="/register"
                 className="rounded-lg bg-blue-700 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-800"
               >
                 Registro
-              </button>
+              </Link>
             </div>
           </div>
         </header>
